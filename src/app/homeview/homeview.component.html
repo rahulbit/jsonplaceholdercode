@@ -1,0 +1,26 @@
+<div class = "row" *ngIf ="jsondata.length>0">
+    <div class="col-md-12" style="text-align: center" *ngFor ="let data of jsondata" >
+          <div class="col-md-3">   
+                <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">
+                            <input type="checkbox" [ngModel]="data.completed" >
+                          </div>
+                        </div>
+                      
+                      </div>
+          </div>
+        
+        <div class="col-md-6">
+                <ul class="list-group">
+              
+                    <li class="list-group-item">{{data.title}}</li>
+                  </ul>
+              </div>
+
+            
+      
+          </div>
+        </div>
+    
+  
